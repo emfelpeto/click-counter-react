@@ -1,6 +1,7 @@
 import './App.css';
 import {Button} from './components/Button';
 import { useState } from 'react';
+import {Counter} from './components/Counter';
 
 function App() {
 
@@ -21,9 +22,7 @@ function App() {
         <h2>Click counter</h2>
       </header>
       <div className="counter-container">
-        <div className='counter-box'>
-          {clickCounter}
-        </div>
+        <Counter clickCounter={clickCounter} />
         <div className='counter-buttons-box'>
           <Button
            text='+'
