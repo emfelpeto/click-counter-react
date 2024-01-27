@@ -1,0 +1,41 @@
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.counter-buttons-box {
+    display: flex;
+    gap: 25px;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+.counter-box {
+    font-size: 120px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+
+.reset-box button {
+    width: 100%;
+}
