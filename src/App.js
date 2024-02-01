@@ -2,8 +2,6 @@ import './App.css';
 import {Button} from './components/Button';
 import { useState } from 'react';
 import {Counter} from './components/Counter';
-import {Selector} from "./components/Selector";
-import countries from './data/countries.json'
 
 function App() {
 
@@ -37,10 +35,6 @@ function App() {
           <Button text='Reset' counterHandler={resetCounter} />
         </div>
       </div>
-      <Selector 
-        options={countries}
-        textLabel='Select country'
-        />
     </div>
   );
 }
